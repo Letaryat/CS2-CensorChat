@@ -1,4 +1,4 @@
 {
-	"Prefix": "{DarkRed}[BlockedWords]{Default}",
-	"Message": "Do not use word{red}'{0}'{Default} in your messages!"
+	"Prefix": "{DarkRed}BlockedWords {Default}| ",
+	"Message": "Do not use word {DarkRed}'{0}'{Default} in your messages!"
 }
