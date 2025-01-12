@@ -10,7 +10,7 @@ public class Censorconfig : BasePluginConfig
 {
     [JsonPropertyName("Flag")] public string OmitFlag { get; set; } = "@chosen/one";
 
-    [JsonPropertyName("Blocked words")] public string[] BlockedWords { get; set; } = ["katujemy.eu", "katujemy", "faggot", "nigger", "zjeb", "kutas", "smiec", "cwel", "idiota", "chuju", "chujowy", "kurwo", "psie", "dziwko", "dziwka", "szmato", "szmata"];
+    [JsonPropertyName("Blocked words")] public string[] BlockedWords { get; set; } = ["word1", "word2"];
 }
 
 public class cs2_censorchat : BasePlugin, IPluginConfig<Censorconfig>
