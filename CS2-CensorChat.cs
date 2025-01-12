@@ -43,7 +43,6 @@ public class cs2_censorchat : BasePlugin, IPluginConfig<Censorconfig>
         if(AdminManager.PlayerHasPermissions(player, Config!.OmitFlag) || player == null || player.IsBot || player.IsHLTV) return HookResult.Continue;
         var msg = message.GetArg(1).ToLower();
         var word = Config.BlockedWords.FirstOrDefault(word => msg.Contains(word.ToLower()));
-        Console.WriteLine(word);
         if(Config.BlockedWords.Any(word => msg.Contains(word.ToLower())))
         {
             player.PrintToChat($"{Localizer["Prefix"]}{Localizer["Message", word!]}");
